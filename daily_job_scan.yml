@@ -1,0 +1,42 @@
+name: Daily Data Jobs Scan
+
+on:
+  schedule:
+    # 7:00 AM Eastern Time (UTC-4 EDT / UTC-5 EST)
+    # Using 11:00 UTC which covers EDT (7am) — adjust to 12:00 in winter for EST
+    - cron: "0 11 * * *"
+  workflow_dispatch: # allow manual trigger from GitHub UI
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # needed to commit seen_jobs.csv back to repo
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run job scanner
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_SENDER: ${{ secrets.GMAIL_SENDER }}
+          GMAIL_RECIPIENT: ${{ secrets.GMAIL_RECIPIENT }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python main.py
+
+      - name: Commit updated seen_jobs.csv
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add seen_jobs.csv
+          git diff --cached --quiet || git commit -m "chore: update seen_jobs.csv [$(date +'%Y-%m-%d')]"
+          git push
