@@ -2,16 +2,17 @@ name: Daily Data Jobs Scan
 
 on:
   schedule:
-    # 7:00 AM Eastern Time (UTC-4 EDT / UTC-5 EST)
-    # Using 11:00 UTC which covers EDT (7am) — adjust to 12:00 in winter for EST
     - cron: "0 11 * * *"
-  workflow_dispatch: # allow manual trigger from GitHub UI
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   scan:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # needed to commit seen_jobs.csv back to repo
+      contents: write
 
     steps:
       - name: Checkout repo
@@ -27,7 +28,7 @@ jobs:
 
       - name: Run job scanner
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GMAIL_SENDER: ${{ secrets.GMAIL_SENDER }}
           GMAIL_RECIPIENT: ${{ secrets.GMAIL_RECIPIENT }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}

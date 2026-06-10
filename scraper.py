@@ -7,7 +7,7 @@ import re
 import requests
 from datetime import date
 from pathlib import Path
-from anthropic import Anthropic
+from openai import OpenAI
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
@@ -31,7 +31,7 @@ EXCLUDE_LEVELS = [
 ]
 
 def _get_client():
-    return Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    return OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 def load_companies():
@@ -267,16 +267,16 @@ HTML:
 Return ONLY the JSON array, no other text."""
 
     try:
-        msg = _get_client().messages.create(
-            model="claude-haiku-4-5-20251001",
+        response = _get_client().chat.completions.create(
+            model="gpt-4o-mini",
             max_tokens=2000,
             messages=[{"role": "user", "content": prompt}],
         )
-        raw = msg.content[0].text.strip()
+        raw = response.choices[0].message.content.strip()
         raw = re.sub(r"^```json|^```|```$", "", raw, flags=re.MULTILINE).strip()
         listings = json.loads(raw)
     except Exception as e:
-        log.error(f"Claude extraction error for {company_name}: {e}")
+        log.error(f"OpenAI extraction error for {company_name}: {e}")
         return []
 
     jobs = []
