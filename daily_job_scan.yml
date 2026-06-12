@@ -26,6 +26,22 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Debug secrets presence
+        env:
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+          SHEET_ID: ${{ secrets.SHEET_ID }}
+        run: |
+          if [ -z "$GOOGLE_CREDENTIALS" ]; then
+            echo "ERROR: GOOGLE_CREDENTIALS is empty or not set"
+          else
+            echo "OK: GOOGLE_CREDENTIALS is set (length: ${#GOOGLE_CREDENTIALS})"
+          fi
+          if [ -z "$SHEET_ID" ]; then
+            echo "ERROR: SHEET_ID is empty or not set"
+          else
+            echo "OK: SHEET_ID is set"
+          fi
+
       - name: Run job scanner
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
