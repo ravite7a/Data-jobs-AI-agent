@@ -29,9 +29,8 @@ jobs:
       - name: Run job scanner
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GMAIL_SENDER: ${{ secrets.GMAIL_SENDER }}
-          GMAIL_RECIPIENT: ${{ secrets.GMAIL_RECIPIENT }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+          SHEET_ID: ${{ secrets.SHEET_ID }}
         run: python main.py
 
       - name: Commit updated seen_jobs.csv
