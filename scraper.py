@@ -24,8 +24,7 @@ TITLE_KEYWORDS = [
 ]
 
 INCLUDE_LEVELS = ["mid", "senior", "sr.", "sr ", "staff", "ii", "level 2", "l2", "2"]
-EXCLUDE_LEVELS = [
-    "junior", "jr.", "associate", "entry", "intern", "new grad",
+EXCLUDE_LEVELS = ["junior", "jr.", "associate", "entry", "intern", "new grad",
     "principal", "director", "manager", "head of", "vp ", "vice president",
     "lead ", "iii", "level 3", "l3", "iv", "level 4",
 ]
