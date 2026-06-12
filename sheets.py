@@ -1,5 +1,6 @@
 import os
 import json
+import base64
 import logging
 from datetime import date
 import gspread
@@ -7,19 +8,32 @@ from google.oauth2.service_account import Credentials
 
 log = logging.getLogger(__name__)
 
-SCOPES = [
-    "https://www.googleapis.com/auth/spreadsheets",
-]
-
+SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 HEADERS = ["Date", "Job ID", "Company", "Title", "Location", "URL"]
 
 
 def get_sheet():
-    creds_json = os.environ["GOOGLE_CREDENTIALS"]
-    creds_dict = json.loads(creds_json)
+    raw = os.environ.get("GOOGLE_CREDENTIALS", "").strip()
+    if not raw:
+        raise ValueError("GOOGLE_CREDENTIALS secret is missing or empty.")
+
+    # Try base64 decode first, fall back to raw JSON
+    try:
+        decoded = base64.b64decode(raw).decode("utf-8")
+        creds_dict = json.loads(decoded)
+    except Exception:
+        try:
+            creds_dict = json.loads(raw)
+        except json.JSONDecodeError as e:
+            raise ValueError(f"GOOGLE_CREDENTIALS could not be parsed: {e}")
+
     creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
     client = gspread.authorize(creds)
-    sheet_id = os.environ["SHEET_ID"]
+
+    sheet_id = os.environ.get("SHEET_ID", "").strip()
+    if not sheet_id:
+        raise ValueError("SHEET_ID secret is missing or empty.")
+
     return client.open_by_key(sheet_id).sheet1
 
 
@@ -53,24 +67,3 @@ def append_jobs(jobs: list[dict]):
 
     sheet.append_rows(rows, value_input_option="USER_ENTERED")
     log.info(f"Appended {len(rows)} rows to Google Sheet.")
-
-
-if __name__ == "__main__":
-    sample = [
-        {
-            "job_id": "gh_airbnb_123456",
-            "company": "Airbnb",
-            "title": "Senior Data Engineer",
-            "location": "San Francisco, CA",
-            "url": "https://job-boards.greenhouse.io/airbnb/jobs/123456",
-        },
-        {
-            "job_id": "gh_stripe_789",
-            "company": "Stripe",
-            "title": "Analytics Engineer II",
-            "location": "Remote, USA",
-            "url": "https://stripe.com/jobs/789",
-        },
-    ]
-    append_jobs(sample)
-    print("Done.")
