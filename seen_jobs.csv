@@ -1,1 +1,104 @@
 job_id,company,title,date_seen
+gh_stripe_7978488,Stripe,Data Analyst,2026-06-12
+gh_stripe_5895430,Stripe,Data Scientist,2026-06-12
+gh_stripe_7809414,Stripe,Data Scientist,2026-06-12
+gh_stripe_7980402,Stripe,"Data Scientist, Economic Insights & Research",2026-06-12
+gh_stripe_7921649,Stripe,Staff Data Analyst,2026-06-12
+gh_stripe_7801457,Stripe,Staff Data Analyst,2026-06-12
+gh_stripe_7568328,Stripe,Staff Data Scientist,2026-06-12
+gh_stripe_7548037,Stripe,"Staff Engineer, Data Engineering Solutions",2026-06-12
+gh_airbnb_7732569,Airbnb,"(Contract) Senior Data Scientist, Platform Inference - MarTech DS Measurement",2026-06-12
+gh_airbnb_7662244,Airbnb,"Senior Data Scientist, Guest & Host",2026-06-12
+gh_airbnb_7926614,Airbnb,"Senior Data Scientist, Guest Travel Insurance (Algorithms)",2026-06-12
+gh_airbnb_7446449,Airbnb,"Senior Data Scientist - Inference, Global Markets",2026-06-12
+gh_airbnb_7998356,Airbnb,Senior Staff Data Engineer - Data Stewardship,2026-06-12
+gh_airbnb_7463663,Airbnb,"Senior Staff Data Engineer, Marketplaces DNA",2026-06-12
+gh_airbnb_7107054,Airbnb,"Senior Staff Data Scientist, Guest & Host Marketplace AI",2026-06-12
+gh_airbnb_7705262,Airbnb,"Staff Data Scientist, Guest & Host",2026-06-12
+gh_airbnb_7095225,Airbnb,"Staff Software Engineer, Data Engineering",2026-06-12
+gh_reddit_7958354,Reddit,Analytics Engineer,2026-06-12
+gh_reddit_7445224,Reddit,Senior Analytics Engineer,2026-06-12
+gh_reddit_6042236,Reddit,"Senior Data Scientist, Ads",2026-06-12
+gh_reddit_7275414,Reddit,"Senior Data Scientist, Consumer",2026-06-12
+gh_reddit_7974504,Reddit,Senior Staff Data Scientist - Consumer Experimentation,2026-06-12
+gh_reddit_7974605,Reddit,Senior Staff Data Scientist - Consumer Relevance,2026-06-12
+gh_reddit_7721787,Reddit,"Staff Data Scientist, Ads",2026-06-12
+gh_reddit_6745284,Reddit,"Staff Data Scientist, Consumer",2026-06-12
+gh_reddit_7445240,Reddit,"Staff Data Scientist, Marketing",2026-06-12
+gh_reddit_7863304,Reddit,"Staff Data Scientist, Safety Insights",2026-06-12
+gh_upstart_7778782,Upstart,"Staff Data Analyst, Servicing",2026-06-12
+gh_coinbase_7736521,Coinbase,Senior Analytics Engineer (Platform - Financial Analytics),2026-06-12
+gh_chime_8586430002,Chime,"Data Scientist, Growth Product",2026-06-12
+gh_chime_8586440002,Chime,"Senior Data Scientist, Growth Product",2026-06-12
+gh_chime_8586462002,Chime,"Senior Data Scientist, Spending",2026-06-12
+gh_chime_8586463002,Chime,"Senior Data Scientist, Trust & Safety",2026-06-12
+gh_chime_8505462002,Chime,"Senior Software Engineer, Data Engineering",2026-06-12
+lv_spotify_08d82da1-0c72-44d1-91eb-7fa22dee3d39,Spotify,Analytics Engineer II,2026-06-12
+lv_spotify_4303f795-d0a5-41ed-8c78-0941780b6e54,Spotify,Data Engineer – Platform,2026-06-12
+lv_spotify_71c28dec-d4a1-4e27-bb9b-1dab4a616ce5,Spotify,Data Scientist - Platform Mission,2026-06-12
+lv_spotify_fc593885-54e1-4807-a67c-77c1d3412cec,Spotify,Data Scientist II - Platform Mission,2026-06-12
+lv_spotify_cb90282e-0917-4219-99fd-8b5d7d5e3050,Spotify,Data Scientist II – Performance Optimization Squad,2026-06-12
+gh_figma_5220003004,Figma,Data Engineer,2026-06-12
+gh_figma_5552580004,Figma,Data Scientist  ,2026-06-12
+gh_figma_5976930004,Figma,"Data Scientist, Core Data -  PhD (2026)",2026-06-12
+gh_figma_6013303004,Figma,"Data Scientist, Marketing",2026-06-12
+gh_dropbox_7739553,Dropbox,Data Engineer,2026-06-12
+gh_dropbox_7739571,Dropbox,"Data Engineer, Analytics Data Engineering",2026-06-12
+gh_dropbox_7762009,Dropbox,Data Scientist,2026-06-12
+gh_dropbox_7762004,Dropbox,Data Scientist,2026-06-12
+gh_dropbox_7872748,Dropbox,"Senior Data Engineer, AI and Systems Engineering",2026-06-12
+gh_dropbox_7872745,Dropbox,"Senior Data Engineer, AI and Systems Engineering",2026-06-12
+gh_dropbox_7789386,Dropbox,"Senior Data Scientist, AI Products",2026-06-12
+gh_dropbox_7739568,Dropbox,Staff Data Engineer,2026-06-12
+gh_dropbox_7595183,Dropbox,"Staff Data Engineer, Analytics Data Engineering",2026-06-12
+gh_lyft_8514400002,Lyft,Data Analyst - Global Growth Luxury Strategy,2026-06-12
+gh_lyft_8568512002,Lyft,"Data Analyst, Operations Planning",2026-06-12
+gh_lyft_8335733002,Lyft,"Data Scientist, Algorithms, Optimization - Fulfillment",2026-06-12
+gh_lyft_8536085002,Lyft,"Data Scientist, Algorithms, Optimization - Fulfillment",2026-06-12
+gh_lyft_8335715002,Lyft,"Data Scientist, Algorithms, Optimization - Fulfillment",2026-06-12
+gh_lyft_8584688002,Lyft,"Senior Data Scientist, Causal Inference",2026-06-12
+gh_lyft_8584695002,Lyft,"Senior Data Scientist, Causal Inference",2026-06-12
+gh_lyft_8584595002,Lyft,"Senior Data Scientist, Causal Inference",2026-06-12
+gh_lyft_8477561002,Lyft,"Senior Data Scientist, Decisions - Risk",2026-06-12
+gh_lyft_8477773002,Lyft,"Senior Data Scientist, Decisions - Risk",2026-06-12
+gh_lyft_8483867002,Lyft,"Senior Data Scientist - Optimization, Central Market Management & AI",2026-06-12
+gh_lyft_8483708002,Lyft,"Senior Data Scientist - Optimization, Central Market Management & AI",2026-06-12
+gh_lyft_8355960002,Lyft,"Senior Data Scientist, Rider New Products",2026-06-12
+gh_lyft_8355945002,Lyft,"Senior Data Scientist, Rider New Products",2026-06-12
+gh_lyft_8571591002,Lyft,"Staff Data Scientist, Decisions - Partnership, Loyalty & Pay",2026-06-12
+gh_lyft_8571542002,Lyft,"Staff Data Scientist, Decisions - Partnership, Loyalty & Pay",2026-06-12
+gh_robinhood_7489476,Robinhood,"Data Scientist, ML (Agentic, CX)",2026-06-12
+gh_robinhood_7318478,Robinhood,Senior Analytics Engineer,2026-06-12
+gh_robinhood_7412037,Robinhood,"Senior Data Scientist, Fraud ",2026-06-12
+gh_robinhood_7482186,Robinhood,"Senior Data Scientist, ML (Brokerage)",2026-06-12
+gh_robinhood_7965000,Robinhood,"Senior Data Scientist, Product (Crypto)",2026-06-12
+gh_robinhood_4738660,Robinhood,"Senior Software Engineer, Data Engineering",2026-06-12
+gh_robinhood_7997218,Robinhood,"Staff Data Scientist,  ML (Credit Risk)",2026-06-12
+gh_brex_8463702002,Brex,Data Analyst II,2026-06-12
+gh_brex_8463703002,Brex,Data Analyst II,2026-06-12
+gh_brex_8463696002,Brex,Data Analyst II,2026-06-12
+gh_brex_8366850002,Brex,Data Engineer,2026-06-12
+gh_brex_8523806002,Brex,Data Engineer,2026-06-12
+gh_affirm_7715405003,Affirm,"Staff Analytics Engineer, Subledger Platform",2026-06-12
+gh_pinterest_4912949,Pinterest,Data Scientist,2026-06-12
+gh_pinterest_7896291,Pinterest,"Data Scientist II, Experimentation",2026-06-12
+gh_pinterest_7816424,Pinterest,"Data Scientist II, Infrastructure",2026-06-12
+gh_pinterest_6087213,Pinterest,"Sr. Data Scientist, Core",2026-06-12
+gh_pinterest_5740948,Pinterest,"Sr. Data Scientist, Monetization",2026-06-12
+gh_pinterest_7793344,Pinterest,"Sr. Data Scientist, Trust and Safety",2026-06-12
+gh_pinterest_7642251,Pinterest,"Sr. Data Scientist, tvScientific",2026-06-12
+gh_pinterest_7963755,Pinterest,"Staff Data Scientist, Ads Product",2026-06-12
+gh_pinterest_6819404,Pinterest,"Staff Data Scientist, Engagement Ecosystem ",2026-06-12
+gh_doordashusa_7028089,DoorDash,Analytics Engineer,2026-06-12
+gh_doordashusa_7991290,DoorDash,"Business Intelligence Engineer (GTM), In-Store Data & Analytics",2026-06-12
+gh_doordashusa_7990832,DoorDash,"Data Analyst, In-Store",2026-06-12
+gh_doordashusa_6103225,DoorDash,Data Scientist / Senior Data Scientist,2026-06-12
+gh_doordashusa_6108388,DoorDash,"Senior Software Engineer, Data Engineering",2026-06-12
+gh_doordashusa_6458514,DoorDash,"Software Engineer II, Data Engineering",2026-06-12
+gh_doordashusa_7905285,DoorDash,Sr. Business Intelligence Engineer,2026-06-12
+gh_doordashusa_6107041,DoorDash,"Staff Software Engineer, Data Engineering",2026-06-12
+gh_instacart_7783158,Instacart,Senior Data Analyst,2026-06-12
+gh_instacart_7779561,Instacart,Senior Data Scientist II - AI for Analytics,2026-06-12
+gh_instacart_4949339,Instacart,Senior Data Scientist (I & II),2026-06-12
+gh_instacart_7819163,Instacart,Senior Data Scientist - Shopping Experience (Search),2026-06-12
+gh_instacart_7958121,Instacart,Senior People Data Scientist,2026-06-12
