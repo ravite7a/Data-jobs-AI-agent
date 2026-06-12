@@ -5,13 +5,13 @@
 
 | # | Company | Career Page URL | ATS Platform |
 |---|---------|----------------|--------------|
-| 1 | Stripe | https://stripe.com/jobs/search | Greenhouse |
+| 1 | Stripe | https://job-boards.greenhouse.io/stripe | Greenhouse |
 | 2 | Airbnb | https://job-boards.greenhouse.io/airbnb | Greenhouse |
 | 3 | Reddit | https://job-boards.greenhouse.io/reddit | Greenhouse |
 | 4 | Plaid | https://job-boards.greenhouse.io/plaid | Greenhouse |
 | 5 | Upstart | https://job-boards.greenhouse.io/upstart | Greenhouse |
-| 6 | NerdWallet | https://job-boards.greenhouse.io/nerdwallet | Greenhouse |
-| 7 | DocuSign | https://job-boards.greenhouse.io/docusign | Greenhouse |
+| 6 | NerdWallet | https://job-boards.greenhouse.io/nerdwalletcareers | Greenhouse |
+| 7 | DocuSign | https://job-boards.greenhouse.io/docusign1 | Greenhouse |
 | 8 | Coinbase | https://job-boards.greenhouse.io/coinbase | Greenhouse |
 | 9 | Jane Street | https://www.janestreet.com/join-jane-street/open-roles | Custom |
 | 10 | Two Sigma | https://careers.twosigma.com/careers/JobSearch | Custom |
@@ -22,7 +22,7 @@
 | 15 | Salesforce | https://salesforce.wd12.myworkdayjobs.com/External_Career_Site | Workday |
 | 16 | Zillow | https://job-boards.greenhouse.io/zillow | Greenhouse |
 | 17 | Figma | https://job-boards.greenhouse.io/figma | Greenhouse |
-| 18 | Acorns | https://job-boards.greenhouse.io/acorns | Greenhouse |
+| 18 | Acorns | https://job-boards.greenhouse.io/acorns1 | Greenhouse |
 | 19 | Atlassian | https://job-boards.greenhouse.io/atlassian | Greenhouse |
 | 20 | Bloomberg | https://careers.bloomberg.com/job/search | Custom |
 | 21 | Dropbox | https://job-boards.greenhouse.io/dropbox | Greenhouse |
@@ -32,14 +32,14 @@
 | 25 | Brex | https://job-boards.greenhouse.io/brex | Greenhouse |
 | 26 | Affirm | https://job-boards.greenhouse.io/affirm | Greenhouse |
 | 27 | Rippling | https://job-boards.greenhouse.io/rippling | Greenhouse |
-| 28 | Palantir | https://job-boards.greenhouse.io/palantir | Greenhouse |
+| 28 | Palantir | https://job-boards.greenhouse.io/palantirtechnologies | Greenhouse |
 | 29 | Pinterest | https://job-boards.greenhouse.io/pinterest | Greenhouse |
 | 30 | dbt Labs | https://job-boards.greenhouse.io/dbtlabsinc | Greenhouse |
 | 31 | Fivetran | https://job-boards.greenhouse.io/fivetran | Greenhouse |
 | 32 | DoorDash | https://job-boards.greenhouse.io/doordashusa | Greenhouse |
 | 33 | Instacart | https://job-boards.greenhouse.io/instacart | Greenhouse |
-| 34 | Ramp | https://job-boards.greenhouse.io/rampfinancial | Greenhouse |
-| 35 | Notion | https://job-boards.greenhouse.io/notionhq | Greenhouse |
+| 34 | Ramp | https://job-boards.greenhouse.io/ramp | Greenhouse |
+| 35 | Notion | https://job-boards.greenhouse.io/notion | Greenhouse |
 
 ## Notes
 - **Duplicates removed:** DocuSign and Zillow each appeared twice in the original list — kept once each.
